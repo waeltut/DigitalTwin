@@ -1,0 +1,300 @@
+<h1>{{ message }}</h1>
+<div class="fb" draggable="true">
+    <svg width="1000" height="1000">
+
+        <rect class="fb_upper_left_event_label" x="1000" y="100" width="10" height="10" style="fill:#ff00f0"/></rect>
+
+
+    </svg>
+    <!--
+    <style>
+        .fb_nick {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            border-width: 0px 0px 0px 0px;
+            width:40px;
+            height:20px;
+        }
+        .fb_title{
+            position:absolute;
+            font-size: 12px;
+            width:80px;
+            height:20px;
+            opacity: 1;
+            text-align: center;
+            border-width: 0px 0px 0px 0px;
+        }
+        .fb_left_spacer{
+            position:absolute;
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: rgba(0,0,0,0);
+            border-width: 1px 1px 1px 0px;
+            width:20px;
+            height:20px;
+        }
+        .fb_right_spacer{
+            position:absolute;
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: rgba(0,0,0,0);
+            border-width: 1px 0px 1px 1px;
+            width:20px;
+            height:20px;
+        }
+        .fb_upper_left_event_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 1px 0px 0px 1px;
+            text-align: left;
+            padding-left: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_middle_left_event_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 0px 0px 1px;
+            text-align: left;
+            padding-left: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_lower_left_event_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 0px 0px 1px;
+            text-align: left;
+            padding-left: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_upper_right_event_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 1px 1px 0px 0px;
+            text-align: right;
+            padding-right: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_middle_right_event_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 1px 0px 0px;
+            text-align: right;
+            padding-right: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_lower_right_event_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 1px 0px 0px;
+            text-align: right;
+            padding-right: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_upper_left_operation_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 0px 0px 1px;
+            text-align: left;
+            padding-left: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_middle_left_operation_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 0px 0px 1px;
+            text-align: left;
+            padding-left: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_lower_left_operation_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 0px 1px 1px;
+            text-align: left;
+            padding-left: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_upper_right_operation_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 1px 0px 0px;
+            text-align: right;
+            padding-right: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_middle_right_operation_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 1px 0px 0px;
+            text-align: right;
+            padding-right: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_lower_right_operation_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 1px 1px 0px;
+            text-align: right;
+            padding-right: 1px;
+            font-size: 12px;
+            width:40px;
+            height:20px;
+        }
+        .fb_id_label{
+            border-style:solid;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            background-color: red;
+            opacity: 1;
+            position:absolute;
+            font-size: 12px;
+            border-width: 0px 1px 0px 1px;
+            text-align: center;
+            width:80px;
+            height:20px;
+        }
+        .fb__right_connection, .fb_left_connection{
+            position:absolute;
+            background-color:rgba(0,255,0,1);
+            border:2px solid;
+            width:10px;
+            height:10px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+    </style>
+    <div class="fb_upper_left_event_label" style=" left:500px; top:100px;">init</div>
+    <div class="fb_upper_right_event_label" style=" left:540px; top:100px;">inot</div>
+    <div class="fb_lower_left_event_label" style="  left:500px; top:120px;">e</div>
+    <div class="fb_lower_right_event_label" style=" left:540px; top:120px;">c</div>
+    <div class="fb_left_spacer" style=" left:500px; top:140px;"></div>
+    <div class="fb_nick" style=" left:520px; top:140px;"></div>
+    <div class="fb_right_spacer" style=" left:560px; top:140px;"></div>
+    <div class="fb_id_label" style=" left:500px; top:160px;">testing</div>
+    <div class="fb_upper_left_operation_label" style=" left:500px; top:180px;">A</div>
+    <div class="fb_upper_right_operation_label" style=" left:540px; top:180px;">A</div>
+    <div class="fb_middle_left_operation_label" style=" left:500px; top:200px;">A</div>
+    <div class="fb_middle_right_operation_label" style=" left:540px; top:200px;">A</div>
+    <div class="fb_lower_left_operation_label" style=" left:500px; top:220px;">A</div>
+    <div class="fb_lower_right_operation_label" style=" left:540px; top:220px;">A</div>
+    <div class="fb_left_connection" style=" left:490px; top:105px; "></div>
+    <div class="fb_left_connection" style=" left:490px; top:125px; "></div>
+    <div class="fb_left_connection" style=" left:490px; top:185px; "></div>
+    <div class="fb_left_connection" style=" left:490px; top:205px; "></div>
+    <div class="fb_left_connection" style=" left:490px; top:225px; "></div>
+    <div class="fb__right_connection" style=" left:580px; top:105px;"></div>
+    <div class="fb__right_connection" style=" left:580px; top:125px;"></div>
+    <div class="fb__right_connection" style=" left:580px; top:185px;"></div>
+    <div class="fb__right_connection" style=" left:580px; top:205px;"></div>
+    <div class="fb__right_connection" style=" left:580px; top:225px;"></div>
+    <div class="fb_title" style=" left:500px; top:80px;">testing 1</div>
+
+
+-->
+</div>
+
